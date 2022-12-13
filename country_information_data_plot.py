@@ -47,7 +47,7 @@ class Country:
  
 def find_countries(user_input, user_list, country_list):
     ''' A function that finds the country based on the user input, which can be from country name/ region/ sub region/ sq km.
-        if user input results in dupliacate region/ sub region/ sq km, a list of the given countries based on these options will be provided,
+        if user input results in duplicate region/ sub region/ sq km, a list of the given countries based on these options will be provided,
         that is used to further narrow down the country.
    
     Parameters: user_input(str), user_list(list), country_list(list)
@@ -148,7 +148,7 @@ def main():
         else: # User input is invalid
             print("Invalid input. Please try again.")
    
-    # Lists created from population_data and threatened_species_list
+    # Lists specific to a selected country created from population_data and threatened_species
     population_list = list(population_data[row_index][1:])
     threatened_species_list = list(threatened_species[row_index][1:])
    
